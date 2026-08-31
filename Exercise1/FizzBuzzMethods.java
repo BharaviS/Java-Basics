@@ -2,7 +2,7 @@ package Exercise1;
 
 import java.util.Scanner;
 
-public class Methors {
+public class FizzBuzzMethods {
     public static String getFizzBuzz(int itrations) {
         StringBuilder result = new StringBuilder();
 
