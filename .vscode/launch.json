@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FizzBuzzMethods",
+            "request": "launch",
+            "mainClass": "Exercise1.FizzBuzzMethods",
+            "projectName": "Java_f744c4ea"
+        },
+        {
+            "type": "java",
+            "name": "OopFizzBuzz",
+            "request": "launch",
+            "mainClass": "Exercise1.OopFizzBuzz",
+            "projectName": "Java_f744c4ea"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}

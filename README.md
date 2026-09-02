@@ -11,6 +11,7 @@ This repository starts with simple Java programs and gradually introduces progra
 1. [Hello World Program](#1-hello-world-program)
 2. [Basic FizzBuzz Program](#2-basic-fizzbuzz-program)
 3. [FizzBuzz Program Using Methods](#3-fizzbuzz-program-using-methods)
+4. [FizzBuzz Program Using a Separate Class](#4-fizzbuzz-program-using-a-separate-class)
 
 ---
 
@@ -157,6 +158,140 @@ public static String getFizzBuzz(int iterations) {
 ```
 
 The method accepts the number of iterations, processes the FizzBuzz logic, builds the complete result using `StringBuilder`, and returns it as a `String`.
+
+---
+## 4. FizzBuzz Program Using a Separate Class
+
+This version introduces the concept of **separating responsibilities into different classes**.
+
+The FizzBuzz logic is moved from the `OopFizzBuzz` class into a separate `myFizzBuzz` class.
+
+### Concepts Covered
+
+* Multiple classes
+* Class-level (`static`) methods
+* Calling methods from another class
+* Method parameters
+* Return values
+* `StringBuilder`
+* `for` loops
+* Conditional statements
+* Modulo operator `%`
+* `Scanner`
+* `try-with-resources`
+* Exception handling
+* Input validation
+
+### Program Structure
+
+The program contains two classes:
+
+```text
+OopFizzBuzz
+│
+└── main()
+      │
+      ├── Read user input
+      │
+      └── myFizzBuzz.getFizzBuzz()
+                    │
+                    └── Process FizzBuzz
+```
+
+### `myFizzBuzz` Class
+
+The `myFizzBuzz` class contains the FizzBuzz processing logic:
+
+```java
+class myFizzBuzz {
+
+    public static String getFizzBuzz(int iterations) {
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 1; i <= iterations; i++) {
+
+            String items;
+
+            if (i % 3 == 0 && i % 5 == 0) {
+                items = "FizzBuzz";
+            } else if (i % 3 == 0) {
+                items = "Fizz";
+            } else if (i % 5 == 0) {
+                items = "Buzz";
+            } else {
+                items = String.valueOf(i);
+            }
+
+            result.append(items).append("\n");
+        }
+
+        return result.toString();
+    }
+}
+```
+
+The `OopFizzBuzz` class then calls the method:
+
+```java
+System.out.println(myFizzBuzz.getFizzBuzz(a));
+```
+
+### Important OOP Note
+
+Although this exercise introduces **multiple classes**, it does **not yet demonstrate object creation**.
+
+The method is declared as:
+
+```java
+public static String getFizzBuzz(int iterations)
+```
+
+Because it is `static`, it belongs to the **class itself**, so an object is not required.
+
+Therefore, this exercise is better understood as:
+
+> **Separating functionality into a separate class using a static method.**
+
+A true object-oriented implementation will be introduced in the next exercise using:
+
+```java
+myFizzBuzz fizzBuzz = new myFizzBuzz();
+```
+
+and an **instance method** instead of a `static` method.
+
+### Source Code
+
+**Source:** [`Exercise1/OopFizzBuzz.java`](https://github.com/BharaviS/Java-Basics/blob/main/Exercise1/OopFizzBuzz.java)
+
+### Example
+
+For an input of:
+
+```text
+15
+```
+
+The output will be:
+
+```text
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+```
 
 ---
 

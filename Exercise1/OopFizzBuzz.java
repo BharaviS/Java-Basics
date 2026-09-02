@@ -2,7 +2,8 @@ package Exercise1;
 
 import java.util.Scanner;
 
-public class FizzBuzzMethods {
+class MyFizzBuzz {
+
     public static String getFizzBuzz(int iterations) {
         StringBuilder result = new StringBuilder();
 
@@ -24,15 +25,18 @@ public class FizzBuzzMethods {
 
         return result.toString();
     }
+}
 
-    public static void main(String[] args) {
+public class OopFizzBuzz {
+
+    public static void main(String[] args){
         try(Scanner sc = new Scanner(System.in)) {
             while (true) {
                 try {
                     System.out.print("Enter a number: ");
                     int a = sc.nextInt();
 
-                    System.out.println(getFizzBuzz(a));
+                    System.out.println(MyFizzBuzz.getFizzBuzz(a));
                     break;
                 } catch (Exception ex) {
                      System.out.println(ex);
@@ -41,6 +45,6 @@ public class FizzBuzzMethods {
             }
         } catch (Exception e) {
             System.out.println(e);
-        }
+        }        
     }
 }
