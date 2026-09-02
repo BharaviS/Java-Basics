@@ -302,6 +302,7 @@ FizzBuzz
 | Hello World | Class, `main()`, console output |
 | Basic FizzBuzz | Loops, conditions, `%`, `Scanner` |
 | FizzBuzz Using Methods | Methods, return values, `StringBuilder`, exception handling |
+| FizzBuzz Using a Separate Class | Multiple classes, `static` methods, method calls between classes, separation of responsibilities, `Scanner`, exception handling |
 
 ---
 
