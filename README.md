@@ -234,7 +234,7 @@ class MyFizzBuzz {
 The `OopFizzBuzz` class then calls the method:
 
 ```java
-System.out.println(myFizzBuzz.getFizzBuzz(a));
+System.out.println(MyFizzBuzz.getFizzBuzz(a));
 ```
 
 ### Important OOP Note
