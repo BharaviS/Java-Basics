@@ -164,7 +164,7 @@ The method accepts the number of iterations, processes the FizzBuzz logic, build
 
 This version introduces the concept of **separating responsibilities into different classes**.
 
-The FizzBuzz logic is moved from the `OopFizzBuzz` class into a separate `myFizzBuzz` class.
+The FizzBuzz logic is moved from the `OopFizzBuzz` class into a separate `MyFizzBuzz` class.
 
 ### Concepts Covered
 
@@ -193,17 +193,17 @@ OopFizzBuzz
       │
       ├── Read user input
       │
-      └── myFizzBuzz.getFizzBuzz()
+      └── MyFizzBuzz.getFizzBuzz()
                     │
                     └── Process FizzBuzz
 ```
 
-### `myFizzBuzz` Class
+### `MyFizzBuzz` Class
 
-The `myFizzBuzz` class contains the FizzBuzz processing logic:
+The `MyFizzBuzz` class contains the FizzBuzz processing logic:
 
 ```java
-class myFizzBuzz {
+class MyFizzBuzz {
 
     public static String getFizzBuzz(int iterations) {
 
@@ -256,7 +256,7 @@ Therefore, this exercise is better understood as:
 A true object-oriented implementation will be introduced in the next exercise using:
 
 ```java
-myFizzBuzz fizzBuzz = new myFizzBuzz();
+MyFizzBuzz fizzBuzz = new MyFizzBuzz();
 ```
 
 and an **instance method** instead of a `static` method.
