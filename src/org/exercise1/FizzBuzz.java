@@ -19,6 +19,8 @@ public class FizzBuzz {
                     System.out.println(i);
                 }
             }
+        } catch (Exception ex) {
+            System.out.println("Error: " + ex.getMessage());
         }
     }
 }
